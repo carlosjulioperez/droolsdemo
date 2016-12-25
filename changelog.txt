@@ -1,0 +1,44 @@
+Drools demo
+By: Carlos Julio Pérez Quizhpe
+
+	* Maven:
+		+ Generating project:
+		mvn archetype:generate -DgroupId=ec.cjpq.droolsdemo -DartifactId=droolsdemo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+		+ Running specific test:
+			mvn clean test -Dtest=ec.cjpq.droolsdemo.creationalPatterns.factorymethod.ShapeFactoryTest
+
+	* Git:
+		+ Quick setup — if you’ve done this kind of thing before:
+		https://github.com/carlosjulioperez/droolsdemo.git
+
+		+ …or create a new repository on the command line:
+		echo "# droolsdemo" >> README.md
+		git init
+		git add README.md
+		git commit -m "Initial setup"
+		git remote add origin https://github.com/carlosjulioperez/droolsdemo.git
+		git push -u origin master
+
+		+ …or push an existing repository from the command line:
+		git remote add origin https://github.com/carlosjulioperez/droolsdemo.git
+		git push -u origin master
+
+	* Shell:
+		+ Search and replace string in the current folder:
+			http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
+
+			+ Non recursive:
+				sed -i -- 's/foo/bar/g' *
+				sed -i -- 's/Buider/Builder/g' *
+
+			+ Recursive:
+				find . -type f -exec sed -i 's/Builder/builder/g' {} +
+structuralPatterns
+
+		* Delete all swp files:]
+			http://superuser.com/questions/480367/whats-the-easiest-way-to-delete-vim-swapfiles-ive-already-recovered-from
+
+			find ./ -type f -name "\.*sw[klmnop]" -delete
+			find ./ -type f -name "\.*swp" -delete
+
