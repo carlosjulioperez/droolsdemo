@@ -1,13 +1,16 @@
 Drools demo
 By: Carlos Julio Pérez Quizhpe
 
+	* Samples:
+		+ sample 1:
+			https://skills421.wordpress.com/2013/12/29/drools6-0-basic-example/
+
 	* Maven:
 		+ Generating project:
 		mvn archetype:generate -DgroupId=ec.cjpq.droolsdemo -DartifactId=droolsdemo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 		+ Running specific test:
-			mvn clean test -Dtest=ec.cjpq.droolsdemo.creationalPatterns.factorymethod.ShapeFactoryTest
-
+			mvn clean test -Dtest=ec.cjpq.droolsdemo.drools.RuleRunnerTest
 	* Git:
 		+ Quick setup — if you’ve done this kind of thing before:
 		https://github.com/carlosjulioperez/droolsdemo.git
