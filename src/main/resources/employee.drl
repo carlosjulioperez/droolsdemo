@@ -1,0 +1,19 @@
+package ec.cjpq.droolsdemo.drools
+
+import ec.cjpq.droolsdemo.model.Employee
+
+dialect "mvel"
+
+rule "onsite"
+	when
+		$employee: Employee(type.equals("onsite"))
+	then
+		System.out.println("onsite :: " + $employee.name);
+end
+
+rule "name without a"
+	when
+		$employee: Employee(!name.contains("a"))
+	then
+		System.out.println("name without a :: " + $employee.name);
+end
