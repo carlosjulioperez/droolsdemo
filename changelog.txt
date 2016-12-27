@@ -6,6 +6,8 @@ By: Carlos Julio Pérez Quizhpe
 			https://skills421.wordpress.com/2013/12/29/drools6-0-basic-example/
 		+ sample 2:
 			http://droolstutorials.blogspot.com/2015/07/simple-drools-using-maven.html
+		+ sample 3:
+			http://www.mastertheboss.com/jboss-jbpm/drools/jboss-drools-tutorial
 
 	* Maven:
 		+ Generating project:

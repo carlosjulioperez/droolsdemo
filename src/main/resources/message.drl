@@ -1,0 +1,23 @@
+package ec.cjpq.droolsdemo.drools
+
+import ec.cjpq.droolsdemo.model.Message
+
+rule "Hello World"
+	dialect "mvel"
+	when
+		m: Message ( status == Message.HELLO, message: message )
+	then
+		modify (m){
+			message = "Goodby cruel world",
+			status = Message.GOODBYE
+		};
+		System.out.println( message );
+end
+
+rule "Good bye"
+	dialect "java"
+	when 
+		Message ( status == Message.GOODBYE, message: message )
+	then
+		System.out.println( message );
+end
